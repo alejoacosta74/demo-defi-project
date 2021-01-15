@@ -18,12 +18,11 @@
  *
  */
 
+require('dotenv').config()
 const HDWalletProvider = require('@truffle/hdwallet-provider');
-const infuraKey = "4a1ee02c9c974baca6dd0691263dfed8";
 //
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
-const mnemonic = "remain staff midnight noise space warrior unveil sing such tourist anxiety attitude castle tool range";
 
 module.exports = {
   /**
@@ -48,12 +47,12 @@ module.exports = {
     port: 8545,            // Standard Ethereum port (default: none)
     network_id: "*"       // Any network (default: none)
     },
-    ropsten: {
-      provider: function() {
-        return new HDWalletProvider(mnemonic, "https://ropsten.infura.io/v3/4a1ee02c9c974baca6dd0691263dfed8",3)
-      },
-      network_id: 3
-    }
+    kovan: {
+      provider: () => new HDWalletProvider(process.env.MNEMONIC, `https://kovan.infura.io/v3/${process.env.INFURA_APIKEY}`),
+      network_id: 42,       // Ropsten's id
+      gas: 8000000        // Ropsten has a lower block limit than mainnet
+    }  
+
     // Another network with more advanced options...
     // advanced: {
     // port: 8777,             // Custom port
