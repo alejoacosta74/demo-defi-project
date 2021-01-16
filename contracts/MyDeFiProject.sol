@@ -18,4 +18,13 @@ contract MyDeFiProject {
         kovanDai.transfer(_recipient, _amount);
     }
 
+    function getMockDaiBalance(address _recipient) view public returns (uint256) {
+        return (mDai.balanceOf(_recipient));
+    }    
+
+    function getKovanDaiBalance(address _recipient) view public returns (uint256) {
+        return (kovanDai.balanceOf(_recipient));
+    }    
+
+
 }

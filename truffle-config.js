@@ -48,7 +48,7 @@ module.exports = {
     network_id: "*"       // Any network (default: none)
     },
     kovan: {
-      provider: () => new HDWalletProvider(process.env.MNEMONIC, `https://kovan.infura.io/v3/${process.env.INFURA_APIKEY}`),
+      provider: () => new HDWalletProvider({ mnemonic : process.env.MNEMONIC, providerOrUrl : `https://kovan.infura.io/v3/${process.env.INFURA_APIKEY}`, addressIndex : 6 ,  numberOfAddresses : 10}),
       network_id: 42,       // Ropsten's id
       gas: 8000000        // Ropsten has a lower block limit than mainnet
     }  
