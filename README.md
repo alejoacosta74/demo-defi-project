@@ -10,7 +10,7 @@ Kovan Dai stable coin used in this project is deployed at address [0x4f96fe3b7a6
 
 Connection to Kovan is stablished via <https://infura.io>
 
-Smart Contract MyDeFiProject is deployed at address [0xb7e4f7bd0b2410b0b43e93ab4c5506e681292984] (https://kovan.etherscan.io/address/0xb7e4f7bd0b2410b0b43e93ab4c5506e681292984)
+Smart Contract MyDeFiProject is deployed at address [0xb7e4f7bd0b2410b0b43e93ab4c5506e681292984](https://kovan.etherscan.io/address/0xb7e4f7bd0b2410b0b43e93ab4c5506e681292984)
 
 ## 2. Project features
 
