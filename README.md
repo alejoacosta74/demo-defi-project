@@ -1,9 +1,9 @@
-# Demo DeFi project using Dai & mockDai (deployed in Kovan)
+# Demo DeFi project
 
 [![built-with openzeppelin](https://img.shields.io/badge/built%20with-OpenZeppelin-3677FF)](https://docs.openzeppelin.com/)
 
 
-## 1. About
+## 1. Description
 
 This repository contains the project source code and dependencies required to deploy 2 smart contracts in Kovan test network implementing simple DeFi transactions based on Dai stable coin and a Mock Dai custom coin.
 
